@@ -34,5 +34,19 @@ public class CheckOutPageActions {
 		return driver.findElement(By.cssSelector(coLocators.totalPrice)).getText();
 		
 	}
-
-}
+	
+	public void updateQuantity(WebDriver driver){
+		   driver.findElement(By.cssSelector(coLocators.updateQuantityNumber)).clear();
+		   driver.findElement(By.cssSelector(coLocators.updateQuantityNumber)).sendKeys("3");
+		   driver.findElement(By.cssSelector(coLocators.updateQuantity)).click();
+		   driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+	}
+	public void removeItems(WebDriver driver){
+	   driver.findElement(By.cssSelector(coLocators.removeCart)).click();
+	   dUtils.waitForPageToLoad(driver);
+	 }
+	 
+	 public String getEmptyCartMessage(WebDriver driver){
+		return driver.findElement(By.cssSelector(coLocators.emptyMessage)).getText();
+	 }
+    }

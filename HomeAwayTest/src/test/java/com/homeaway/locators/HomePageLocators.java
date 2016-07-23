@@ -1,5 +1,5 @@
 /**
- * Xpath locators for home page.
+ * css locators for home page.
  */
 
 package test.java.com.homeaway.locators;

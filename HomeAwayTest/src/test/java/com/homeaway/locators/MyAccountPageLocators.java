@@ -1,5 +1,10 @@
 package test.java.com.homeaway.locators;
 
+/**
+ * css locators for Account page
+ * @author geetha
+ *
+ */
 public class MyAccountPageLocators {
 	public static final String login = "#log";
 	public static final String password = "#pwd";

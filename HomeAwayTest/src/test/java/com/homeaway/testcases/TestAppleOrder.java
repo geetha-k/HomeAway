@@ -19,6 +19,9 @@ public class TestAppleOrder {
 	CheckOutPageActions chActions = new CheckOutPageActions();
 	CommonUtils cUtils = new CommonUtils();
 	
+	/**
+	 * Verifies product order.
+	 */
 	
 	@Test
 	public void testAppleOrder() {

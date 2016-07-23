@@ -29,6 +29,9 @@ MyAccountPageActions mpActions = new MyAccountPageActions();
 CommonUtils cUtils = new CommonUtils();
 
 
+/**
+ * Verifies update account details.
+ */
 @Test
 public void testAccountDetails() {
 	String expectedPhNumber="1234567890";

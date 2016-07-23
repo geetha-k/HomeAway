@@ -18,4 +18,6 @@ public class ProductPageActions {
 		dUtils.waitForPageElement(driver, ppLocators.confirmCheckout, "css");
 		driver.findElement(By.cssSelector(ppLocators.confirmCheckout)).click();
 	}
+	
+  
 }
