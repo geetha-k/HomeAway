@@ -19,4 +19,8 @@ public class HomePageActions {
 		dUtils.waitForPageElement(driver, homeLoc.iphoneProduct, "css");
 		driver.findElement(By.cssSelector(homeLoc.iphoneProduct)).click();
 	}
+	
+	public void clickMyaccount(WebDriver driver) {
+		driver.findElement(By.cssSelector(homeLoc.myaccountLink)).click();
+	}
 }

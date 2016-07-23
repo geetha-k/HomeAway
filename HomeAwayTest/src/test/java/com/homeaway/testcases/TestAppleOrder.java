@@ -2,7 +2,7 @@ package test.java.com.homeaway.testcases;
 
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
-import org.testng.Assert;
+import org.junit.Assert;
 
 import main.java.com.homeaway.pageactions.CheckOutPageActions;
 import main.java.com.homeaway.pageactions.HomePageActions;
@@ -27,13 +27,12 @@ public class TestAppleOrder {
 		WebDriver wd = driver.getFirefoxDriver();
 		cUtils.goToHomePage(wd);
 		cUtils.moveToElementAndSelectProduct(wd);
-		//homeActions.selectApple4SProduct(wd);
 		pcActions.selectIphoneProductFromProductList(wd);
 		ppActions.addItemToCart(wd);
 		ppActions.goToCheckOut(wd);
 		chActions.clickContinueOnCheckOutPage(wd);
 		chActions.selectCountryAndCalculate(wd);
 		finalPrice = chActions.getTotalPrice(wd);
-		Assert.assertEquals(finalPrice, productPrice, "Total price is wrong. Test failed.");
+		Assert.assertEquals(finalPrice, productPrice);
 	}
 }
